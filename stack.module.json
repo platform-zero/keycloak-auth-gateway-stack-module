@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "keycloak-auth-gateway",
+  "repo": "keycloak-auth-gateway-stack-module",
+  "runtimeId": "keycloak-auth-gateway",
+  "lifecycle": "active",
+  "dependencies": [
+    "keycloak",
+    "stack-foundation"
+  ],
+  "overlays": [
+    "stack.compose/keycloak-auth-gateway.yml"
+  ]
+}
