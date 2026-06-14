@@ -1,3 +1,23 @@
-# keycloak-auth-gateway-stack-module
+# keycloak-auth-gateway stack module
 
-Stack module `keycloak-auth-gateway` extracted from `sso-stack-generator`.
+- Module id: `keycloak-auth-gateway`
+- Module repo: `keycloak-auth-gateway-stack-module`
+- Source repo: none declared
+- Lifecycle: `active`
+
+## Owned overlays
+- `stack.compose/keycloak-auth-gateway.yml`
+
+## Dependencies
+- `keycloak`
+- `stack-foundation`
+
+## Validation
+
+```sh
+./tests/validate.sh
+```
+
+## Lifecycle
+
+`active` modules are expected to keep `stack.module.json`, owned overlays, and `tests/validate.sh` in sync.
