@@ -6,7 +6,7 @@
 - Lifecycle: `active`
 
 ## Owned overlays
-- `stack.compose/keycloak-auth-gateway.yml`
+- `stack.runtime.yaml`
 
 ## Dependencies
 - `keycloak`
