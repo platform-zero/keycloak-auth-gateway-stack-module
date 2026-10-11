@@ -75,11 +75,13 @@ services:
       OAUTH2_PROXY_CODE_CHALLENGE_METHOD: "S256"
       OAUTH2_PROXY_SCOPE: "openid profile email groups"
       OAUTH2_PROXY_UPSTREAMS: "static://202"
+    extraHosts:
+    - "keycloak.${DOMAIN}:host-gateway"
     networks:
     - "caddy"
     - "valkey"
     volumes:
-    - "caddy_ca:/ca:ro"
+    - "${STACK_VOLUME_ROOT}/caddy_ca:/ca:ro"
     command:
     - "--provider-ca-file=/ca/caddy-ca.crt"
     - "--use-system-trust-store=true"
